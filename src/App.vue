@@ -1,9 +1,10 @@
 <template>
   <v-app>
-    <mainHeader />
+    <mainHeader/>
     
     <v-main>
-      <hero-component />
+      <hero-component/>
+      <AboutUs/>
     </v-main>
   </v-app>
 </template>
@@ -11,12 +12,14 @@
 <script>
 import mainHeader from "./components/Header.vue"
 import HeroComponent from './components/HeroComponent.vue';
+import AboutUs from './components/AboutUs.vue';
 
 export default {
   name: 'App',
   components: {
     mainHeader,
-    HeroComponent
+    HeroComponent,
+    AboutUs
   },
 
   data() {
