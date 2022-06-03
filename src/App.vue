@@ -1,28 +1,37 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <mainHeader />
+    
+    <v-main>
+      <hero-component />
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import mainHeader from "./components/Header.vue"
+import HeroComponent from './components/HeroComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
-</script>
+    mainHeader,
+    HeroComponent
+  },
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  data() {
+    return {
+      menus: [
+        {title: 'Home', route: 'home'},
+        {title: 'About us', route: 'about-us'},
+        {title: 'Portfolio', route: 'portfolio'},
+        {title: 'Project', route: 'project'},
+        {title: 'Gallery', route: 'gallery'},
+        {title: 'Contact', route: 'contact'},
+      ]
+      
+      
+    }
+  }
+};
+</script>
