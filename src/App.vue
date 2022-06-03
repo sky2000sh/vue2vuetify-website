@@ -3,8 +3,9 @@
     <mainHeader/>
     
     <v-main>
-      <hero-component/>
+      <HeroComponent/>
       <AboutUs/>
+      <BusinessResult/>
     </v-main>
   </v-app>
 </template>
@@ -13,13 +14,15 @@
 import mainHeader from "./components/Header.vue"
 import HeroComponent from './components/HeroComponent.vue';
 import AboutUs from './components/AboutUs.vue';
+import BusinessResult from './components/BusinessResult.vue';
 
 export default {
   name: 'App',
   components: {
     mainHeader,
     HeroComponent,
-    AboutUs
+    AboutUs,
+    BusinessResult
   },
 
   data() {
@@ -27,7 +30,7 @@ export default {
       menus: [
         {title: 'Home', route: 'home'},
         {title: 'About us', route: 'about-us'},
-        {title: 'Portfolio', route: 'portfolio'},
+        {title: 'Business result', route: 'business-result'},
         {title: 'Project', route: 'project'},
         {title: 'Gallery', route: 'gallery'},
         {title: 'Contact', route: 'contact'},
