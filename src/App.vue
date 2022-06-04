@@ -5,7 +5,12 @@
     <v-main>
       <HeroComponent/>
       <AboutUs/>
-      <BusinessResult/>
+      <Portfolio/>
+      <Project/>
+      <Gallery/>
+      <Contact/>
+      <Footer/>
+
     </v-main>
   </v-app>
 </template>
@@ -14,7 +19,11 @@
 import mainHeader from "./components/Header.vue"
 import HeroComponent from './components/HeroComponent.vue';
 import AboutUs from './components/AboutUs.vue';
-import BusinessResult from './components/BusinessResult.vue';
+import Portfolio from './components/Portfolio.vue';
+import Project from './components/Project.vue';
+import Gallery from './components/Gallery.vue';
+import Contact from './components/Contact.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
@@ -22,7 +31,11 @@ export default {
     mainHeader,
     HeroComponent,
     AboutUs,
-    BusinessResult
+    Portfolio,
+    Project,
+    Gallery,
+    Contact,
+    Footer
   },
 
   data() {

@@ -42,7 +42,7 @@
     }
 </script>
 
-<style scoped>
+<style>
 .toolTitle {
     font-size: 32px;
     font-weight: bold;
