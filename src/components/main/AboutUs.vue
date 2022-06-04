@@ -2,7 +2,7 @@
     <v-container class="pt-15">
         <v-row>
             <v-col lg="6">
-                <img src="../assets/AboutUs.png" alt="AboutUs">
+                <img src="./../../assets/AboutUs.png" alt="AboutUs">
             </v-col>
             <v-col lg="6">
                 <v-subheader class="text-h4"> About Us </v-subheader>

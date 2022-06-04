@@ -12,7 +12,7 @@
                 </v-btn>
             </v-col>
             <v-col lg="6">
-                <img width="100%" src="../assets/hero-img.jpg" alt="hero-img">
+                <img width="100%" src="./../../assets/hero-img.jpg" alt="hero-img">
             </v-col>
         </v-row>
     </v-container>    

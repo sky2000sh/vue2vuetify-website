@@ -18,7 +18,7 @@
             <v-btn text>
                 <v-icon> mdi-magnify </v-icon>
             </v-btn>
-            <v-btn outlined color="success"> Get Started </v-btn>
+            <v-btn outlined color="success"><router-link to='/login'>Get Started</router-link></v-btn>
         </v-list>
     </v-app-bar>
 </template>
@@ -26,6 +26,7 @@
 <script>
     export default {
         name: "mainHeader",
+
         data() {
             return {
                 menus: [
@@ -37,7 +38,13 @@
                     {title: 'Contact', route: 'contact'},
                 ]
             }
-        }
+        },
+
+        methods: {
+            moveLogin() {
+
+            }
+        },
         
     }
 </script>

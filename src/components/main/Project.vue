@@ -9,7 +9,7 @@
             </v-col>
             <v-col lg="4" v-for="project in 3" :key="project">
                 <v-card class="mx-auto my-12" max-width="374">
-                    <v-img height="250" src="./../assets/web/2.jpg"></v-img>
+                    <v-img height="250" src="./../../assets/web/2.jpg"></v-img>
                     <v-card-title>Web Developement</v-card-title>
                     <v-card-text>
                         <div>Small plates, salads & sandwiches - an intimate setting with 12 indoor seats.</div>
