@@ -18,7 +18,7 @@
             <v-btn text>
                 <v-icon> mdi-magnify </v-icon>
             </v-btn>
-            <v-btn outlined color="success"><router-link to='/login'>Get Started</router-link></v-btn>
+            <v-btn outlined color="success" @click="moveLogin">Get Started</v-btn>
         </v-list>
     </v-app-bar>
 </template>
@@ -42,7 +42,7 @@
 
         methods: {
             moveLogin() {
-
+                this.$router.push('/login')
             }
         },
         
